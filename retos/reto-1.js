@@ -3,14 +3,14 @@
 // 3 - retorno el que de true
 
 function findFirstRepeated(gifts) {
-  const obj = {}
+  const set = new Set()
 
   for (const gift of gifts) {
-    if (obj[gift]) {
+    if (set.has(gift)) {
       return gift
     }
 
-    obj[gift] = true
+    set.add(gift)
   }
 
   return -1
