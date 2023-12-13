@@ -8,7 +8,9 @@ function decode(message: string) {
   const revert = clean.split('').reverse().join('')
   const result = message.replace(match[0], revert)
 
-  return decode(result)
+  const recursividad = decode(result)
+
+  return recursividad
 }
 
 console.log(decode('sa(u(cla)atn)s'))
