@@ -9,8 +9,3 @@ function findNaughtyStep(original: [], modified: []) {
     if (original[i] !== modified[i]) return max[i]
   }
 }
-
-const original = 'abcd'
-const modified = 'abcde'
-
-// console.log(findNaughtyStrp(original, modified))
